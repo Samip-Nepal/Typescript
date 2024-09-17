@@ -7,4 +7,5 @@ function hi_there(document) {
 }
 let number = [1, 2, 3, 4];
 number.forEach((num) => (console.log(num)));
+let user = [1, "a"];
 //# sourceMappingURL=index.js.map
