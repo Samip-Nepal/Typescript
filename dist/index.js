@@ -27,4 +27,15 @@ let touppercase = (val) => {
 touppercase("samip");
 let signupuser = (name, id, islogin = false) => (console.log(name));
 signupuser("samip", 123);
+function addtwonumbers(num) {
+    return num + 2;
+}
+addtwonumbers(3);
+const hero = ["samip", "nepal"];
+hero.map((heros) => {
+    return `hero is ${hero}`;
+});
+function fail(msg) {
+    throw new Error(msg);
+}
 //# sourceMappingURL=index.js.map

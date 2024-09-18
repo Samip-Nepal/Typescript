@@ -38,3 +38,19 @@ touppercase("samip")
 let signupuser=(name:string,id:number,islogin:boolean =false)=>(console.log(name))
 signupuser("samip",123)
 
+//we can return just the string to avoid this we can just do this
+
+function addtwonumbers(num:number):number {
+    return num+2
+}
+addtwonumbers(3)
+
+const hero=["samip","nepal"]
+hero.map((heros):string=>{
+return `hero is ${hero}`
+})
+
+//other function also
+function fail(msg: string): never {
+    throw new Error(msg);
+  }
