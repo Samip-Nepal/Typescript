@@ -8,4 +8,23 @@ function hi_there(document) {
 let number = [1, 2, 3, 4];
 number.forEach((num) => (console.log(num)));
 let user = [1, "a"];
+let arr = [1, 2];
+var size;
+(function (size) {
+    size[size["small"] = 1] = "small";
+    size[size["medium"] = 2] = "medium";
+    size[size["large"] = 3] = "large";
+})(size || (size = {}));
+let sizecal = size.medium;
+console.log(sizecal);
+function addtwonumber(num) {
+    return num + 2;
+}
+addtwonumber(3);
+let touppercase = (val) => {
+    return val.toUpperCase;
+};
+touppercase("samip");
+let signupuser = (name, id, islogin = false) => (console.log(name));
+signupuser("samip", 123);
 //# sourceMappingURL=index.js.map
