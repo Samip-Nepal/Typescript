@@ -42,4 +42,7 @@ function fail(msg) {
 function userid({}) {
 }
 userid({ name: "samip", id: 1123 });
+function userinfo(user) {
+}
+userinfo({ name: "samip", email: "samipnepal555@gmail.com", isactv: true });
 //# sourceMappingURL=index.js.map

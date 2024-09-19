@@ -66,6 +66,18 @@ function userid({}): void {
   }
   userid({name:"samip",id:1123});
 
+  //other method of object type
+
+  type users={
+    name:string;
+    email:string;
+    isactv:boolean
+  }
+  function userinfo( user: users) {
+}
+userinfo({name:"samip",email:"samipnepal555@gmail.com", isactv: true})
+
+
 
 
 
