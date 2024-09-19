@@ -54,3 +54,28 @@ return `hero is ${hero}`
 function fail(msg: string): never {
     throw new Error(msg);
   }
+
+  //object in ts
+//   let userid={
+//     name:"samip",
+//     id:1234,
+//     isavt:true
+//   }
+
+function userid({}): void {
+  }
+  userid({name:"samip",id:1123});
+
+
+
+
+
+
+
+
+
+
+
+
+
+  export{}

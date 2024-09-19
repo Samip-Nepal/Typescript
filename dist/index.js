@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let age = 25;
 let first_name = "samip";
 let ishero = true;
@@ -38,4 +39,7 @@ hero.map((heros) => {
 function fail(msg) {
     throw new Error(msg);
 }
+function userid({}) {
+}
+userid({ name: "samip", id: 1123 });
 //# sourceMappingURL=index.js.map
