@@ -62,20 +62,47 @@ function fail(msg: string): never {
 //     isavt:true
 //   }
 
-function userid({}): void {
-  }
-  userid({name:"samip",id:1123});
+// function userid({}): void {
+//   }
+//   userid({name:"samip",id:1123});
 
-  //other method of object type
+//   //other method of object type
 
-  type users={
-    name:string;
-    email:string;
-    isactv:boolean
-  }
-  function userinfo( user: users) {
+//   type users={
+//     name:string;
+//     email:string;
+//     isactv:boolean
+//   }
+//   function userinfo( user: users) {
+// }
+// userinfo({name:"samip",email:"samipnepal555@gmail.com", isactv: true})
+
+//readonly and optional
+
+type userid={
+    readonly_id:string
+    name:string
+        email:string
+        isactv:boolean
+        creaditcard?:boolean
+       }
+
+       let userids:userid={
+           readonly_id: "2334",  
+    name:"samip",
+        email:"samipnepal555@gmail.com",
+        isactv:true
+       }
+
+
+type cardnumber={
+    cardnumber:string
 }
-userinfo({name:"samip",email:"samipnepal555@gmail.com", isactv: true})
+type carddate={
+    carddetails:string
+}
+
+type corddetails=cardnumber &carddate;
 
 
 

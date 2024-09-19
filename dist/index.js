@@ -39,10 +39,10 @@ hero.map((heros) => {
 function fail(msg) {
     throw new Error(msg);
 }
-function userid({}) {
-}
-userid({ name: "samip", id: 1123 });
-function userinfo(user) {
-}
-userinfo({ name: "samip", email: "samipnepal555@gmail.com", isactv: true });
+let userids = {
+    readonly_id: "2334",
+    name: "samip",
+    email: "samipnepal555@gmail.com",
+    isactv: true
+};
 //# sourceMappingURL=index.js.map
