@@ -104,6 +104,37 @@ type carddate={
 
 type corddetails=cardnumber &carddate;
 
+//union help to define many type in same variable
+
+type User = {
+    name: string;
+    id: number;
+  };
+  
+  type Admin = {
+    username: string;
+    id: number;
+  };
+  let samip: User | Admin = { name: "samip", id: 3554 };
+  // Assigning an object with properties matching the Admin type
+  samip = { username: "hc", id: 345};
+
+//   function detabaseid(id:string | number) {
+//     console.log(`db is is ${id}`);
+    
+//   }
+   detabaseid(3)
+   detabaseid("3")
+   function detabaseid(id:string | number) {
+        if (typeof id ==="string") {
+            id.toUpperCase();
+        }
+   }
+
+   //array 
+
+   let array:(number |string|boolean)[]=[1,2,3,"3",true]
+   let seatallocation:"left"|"middle"|"right"
 
 
 

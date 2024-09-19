@@ -45,4 +45,15 @@ let userids = {
     email: "samipnepal555@gmail.com",
     isactv: true
 };
+let samip = { name: "samip", id: 3554 };
+samip = { username: "hc", id: 345 };
+detabaseid(3);
+detabaseid("3");
+function detabaseid(id) {
+    if (typeof id === "string") {
+        id.toUpperCase();
+    }
+}
+let array = [1, 2, 3, "3", true];
+let seatallocation;
 //# sourceMappingURL=index.js.map
