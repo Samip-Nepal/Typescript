@@ -26,14 +26,14 @@ let touppercase = (val) => {
     return val.toUpperCase;
 };
 touppercase("samip");
-let signupuser = (name, id, islogin = false) => (console.log(name));
+let signupuser = (name, _id, _islogin = false) => (console.log(name));
 signupuser("samip", 123);
 function addtwonumbers(num) {
     return num + 2;
 }
 addtwonumbers(3);
 const hero = ["samip", "nepal"];
-hero.map((heros) => {
+hero.map((_heros) => {
     return `hero is ${hero}`;
 });
 function fail(msg) {
@@ -56,4 +56,18 @@ function detabaseid(id) {
 }
 let array = [1, 2, 3, "3", true];
 let seatallocation;
+let newarr1 = ["samip", 123];
+newarr1[0] = "samipdon";
+let userinfo = {
+    role: "start",
+    iddata: 344, email: "samipnepal@", userid: 123,
+    githubtoken: "1234",
+    starttrails: () => {
+        return "samip";
+    },
+    gets: (_hello = "samip") => {
+        return 10;
+    }
+};
+userinfo.email = "samipnepal222";
 //# sourceMappingURL=index.js.map

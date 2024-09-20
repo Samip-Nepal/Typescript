@@ -35,7 +35,7 @@ let touppercase=(val:string)=>{
     return val.toUpperCase};
 touppercase("samip")
 
-let signupuser=(name:string,id:number,islogin:boolean =false)=>(console.log(name))
+let signupuser=(name:string,_id:number,_islogin:boolean =false)=>(console.log(name))
 signupuser("samip",123)
 
 //we can return just the string to avoid this we can just do this
@@ -46,7 +46,7 @@ function addtwonumbers(num:number):number {
 addtwonumbers(3)
 
 const hero=["samip","nepal"]
-hero.map((heros):string=>{
+hero.map((_heros):string=>{
 return `hero is ${hero}`
 })
 
@@ -130,14 +130,48 @@ type User = {
             id.toUpperCase();
         }
    }
-
    //array 
 
    let array:(number |string|boolean)[]=[1,2,3,"3",true]
    let seatallocation:"left"|"middle"|"right"
 
+   //tuples in ts can be written as
+   type arr1=[string,number]
+   let newarr1:arr1=["samip",123]
+   newarr1[0]="samipdon"//tuple not following it rule
+   //can use all the method of array like push pop and so on
 
+// interface
 
+interface userids{
+    readonly iddata:number
+    email:string,
+    userid:number
+    googleid?:number
+    starttrails():string
+    gets(name:string):number
+}
+interface userids{
+    githubtoken:string
+    role:string
+}
+interface Admines extends userids {
+    role:"samip";
+}
+ let userinfo:userids={
+    role: "start",
+
+     iddata: 344, email: "samipnepal@", userid: 123,
+githubtoken:"1234",
+     starttrails:()=>{
+        return "samip"
+     },
+     gets: (_hello = "samip") => {
+         return 10;
+     }
+ }
+
+userinfo.email="samipnepal222"
 
 
 
