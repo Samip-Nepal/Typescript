@@ -70,4 +70,12 @@ let userinfo = {
     }
 };
 userinfo.email = "samipnepal222";
+class users {
+    constructor(email, names) {
+        this.email = email;
+        this.names = names;
+        this.readonly_cast = "nepal";
+    }
+}
+const samips = new users("samip", "samipnepal333");
 //# sourceMappingURL=index.js.map

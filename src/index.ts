@@ -170,9 +170,27 @@ githubtoken:"1234",
          return 10;
      }
  }
-
 userinfo.email="samipnepal222"
 
+//private 
+// class users{
+// names:string
+// email:string
+// private readonly_cast:string="nepal"
+// constructor(email:string,names:string){
+//     this.names=names
+//     this.email=email
+// }
+// }
+class users{
+   
+    private readonly_cast:string="nepal"
+    constructor(
+        public email:string,
+        public names:string){    
+    }
+    }
+const samips  = new users("samip","samipnepal333");
 
 
 
