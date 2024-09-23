@@ -138,7 +138,7 @@ type User = {
    //tuples in ts can be written as
    type arr1=[string,number]
    let newarr1:arr1=["samip",123]
-   newarr1[0]="samipdon"//tuple not following it rule
+   newarr1[0]="samipdon"//tuple not following it rule 
    //can use all the method of array like push pop and so on
 
 // interface
@@ -183,12 +183,38 @@ userinfo.email="samipnepal222"
 // }
 // }
 class users{
-   
+   private _courseCount=1
+   //protected _cousrseCount=2
+   //can be acess with the class but not ouside the class
     private readonly_cast:string="nepal"
     constructor(
         public email:string,
         public names:string){    
     }
+
+    // public get users() : number {
+    //     return this._countnumber
+    // }
+    private deletetoken(){
+        console.log(this.email);
+        
+    }
+    getAppleEmail() {
+        return `apple${this.email}`;
+      }
+    
+      get courseCount() {
+        return this._courseCount;
+      }
+    
+      set courseCount(courseNum) {
+        if (courseNum >= 0) {
+          this._courseCount = courseNum;
+        } else {
+          console.error("Course count cannot be negative.");
+        }
+      }
+    
     }
 const samips  = new users("samip","samipnepal333");
 

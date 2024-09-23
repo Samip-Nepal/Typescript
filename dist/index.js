@@ -74,7 +74,25 @@ class users {
     constructor(email, names) {
         this.email = email;
         this.names = names;
+        this._courseCount = 1;
         this.readonly_cast = "nepal";
+    }
+    deletetoken() {
+        console.log(this.email);
+    }
+    getAppleEmail() {
+        return `apple${this.email}`;
+    }
+    get courseCount() {
+        return this._courseCount;
+    }
+    set courseCount(courseNum) {
+        if (courseNum >= 0) {
+            this._courseCount = courseNum;
+        }
+        else {
+            console.error("Course count cannot be negative.");
+        }
     }
 }
 const samips = new users("samip", "samipnepal333");
